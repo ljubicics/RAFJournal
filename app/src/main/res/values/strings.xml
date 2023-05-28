@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RAFJournal</string>
+    <string name="username_field">username</string>
+    <string name="password_field">password</string>
+    <string name="email_field">email</string>
+    <string name="login_button">login</string>
+    <string name="new_password">new password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="change_password">change password</string>
+    <string name="logout_button">logout</string>
+    <string name="confirm_changes">confirm changes</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednseday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

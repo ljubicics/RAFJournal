@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_daily_plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_light_blue"
+    android:clickable="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/monthDailyPlanTV"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/darker_blue"
+        android:gravity="center"
+        android:paddingVertical="5px"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60px"
+        app:layout_constraintBottom_toTopOf="@id/showPastCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/showPastCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="616dp"
+        android:background="@drawable/event_description_box"
+        android:buttonTint="@color/black"
+        android:layoutDirection="rtl"
+        android:paddingLeft="50px"
+        android:text="Show past obligations"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPastCheckBox"
+        app:layout_constraintVertical_bias="0.078">
+
+        <TextView
+            android:id="@+id/lowTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_low"
+            android:paddingVertical="10dp"
+            android:text="LOW"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <TextView
+            android:id="@+id/midTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_mid"
+            android:paddingVertical="10dp"
+            android:text="MID"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <TextView
+            android:id="@+id/highTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_high"
+            android:paddingVertical="10dp"
+            android:text="HIGH"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px"
+            tools:layout_editor_absoluteX="270dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eventSearchET"
+        android:layout_width="409dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPastCheckBox" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDailyPlan"
+        android:layout_width="409dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/baseline_add_circle_24"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

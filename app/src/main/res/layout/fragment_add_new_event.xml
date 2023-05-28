@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/backgroud_light_blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/darker_blue">
+
+        <TextView
+            android:id="@+id/addMonthTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/lowAddTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_low"
+            android:paddingVertical="10dp"
+            android:text="LOW"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/midAddTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_mid"
+            android:paddingVertical="10dp"
+            android:text="MID"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/highAddTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/day_box_high"
+            android:paddingVertical="10dp"
+            android:text="HIGH"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addTitleET"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/event_description_box"
+        android:hint="Title"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <EditText
+        android:id="@+id/addStartTimeET"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:hint="Time Start"
+        android:textSize="20dp"
+        android:inputType="none"
+        android:focusable="false"
+        android:background="@drawable/event_description_box"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTitleET" />
+
+    <EditText
+        android:id="@+id/addEndTimeET"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/event_description_box"
+        android:focusable="false"
+        android:hint="Time End"
+        android:inputType="none"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/addDescriptionET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addStartTimeET" />
+
+    <EditText
+        android:id="@+id/addDescriptionET"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/event_description_box"
+        android:gravity="top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addEndTimeET" />
+
+    <Button
+        android:id="@+id/addCreateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/button_green"
+        android:text="Create"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addCancelButton"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDescriptionET"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/addCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/description_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDescriptionET"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

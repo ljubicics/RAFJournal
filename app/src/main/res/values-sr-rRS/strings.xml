@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RAFDnevnjak</string>
+    <string name="username_field">korisnicko ime</string>
+    <string name="password_field">lozinka</string>
+    <string name="email_field">email</string>
+    <string name="login_button">prijavite se</string>
+    <string name="new_password">nova lozinka</string>
+    <string name="confirm_password">potvrdite lozinku</string>
+    <string name="change_password">promenite lozinku</string>
+    <string name="logout_button">odjavite se</string>
+    <string name="confirm_changes">potvrdite promenu</string>
+    <string name="monday">Pon</string>
+    <string name="tuesday">Uto</string>
+    <string name="wednseday">Sre</string>
+    <string name="thursday">Cet</string>
+    <string name="friday">Pet</string>
+    <string name="saturday">Sub</string>
+    <string name="sunday">Ned</string>
+</resources>
